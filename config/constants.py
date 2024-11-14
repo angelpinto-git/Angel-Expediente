@@ -1,0 +1,1 @@
+EXPEDIENTES_PATH = 'expedientes.json'
