@@ -11,5 +11,5 @@ def read_json_file(path: str) -> list:
 
 
 def write_json_file(path: str, content: list) -> None:
-    with open(path, 'a') as file:
+    with open(path, 'w') as file:
         json.dump(content, file, indent=4)

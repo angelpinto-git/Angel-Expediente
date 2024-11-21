@@ -64,7 +64,7 @@ class ExpedienteController:
         try:
             num_expediente = int(
                 input("Ingrese el número del Expediente a actualizar: "))
-            expediente = cls.load_user(num_expediente)
+            expediente = cls.load_record(num_expediente)
             if expediente:
              expediente.caratula = input("Nueva carátula: ")
              expediente.juzgado = input("Ingrese Juzgado: ")
@@ -82,7 +82,7 @@ class ExpedienteController:
         try:
             num_expediente = int(
                 input("Ingrese el número del Expediente a eliminar: "))
-            expediente = cls.load_user(num_expediente)
+            expediente = cls.load_record(num_expediente)
             if expediente:
                 Expediente.all.remove(expediente)
                 print(colored("Expediente eliminado.", "green"))
